@@ -10,3 +10,4 @@
 # add ignore files
 *.xml
 */target/*
+&.class

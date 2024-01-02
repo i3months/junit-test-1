@@ -1,12 +1,35 @@
 package com.luv2code.junitdemo;
 
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class DemoUtilsTest {
+
+    DemoUtils demoUtils;
+
+    @BeforeEach
+    void setupBeforeEach() {
+        demoUtils = new DemoUtils();
+        System.out.println("before each");
+    }
+
+    @BeforeAll
+    static void setupBeforeAllClass() {
+        System.out.println("before all");
+    }
+
+    @AfterAll
+    static void setupAfterAllClass() {
+        System.out.println("after all");
+    }
+
+    @AfterEach
+    void tearDownAfterEach() {
+        System.out.println("after each");
+    }
 
     @Test
     void testEqualsAndNotEquals() {
