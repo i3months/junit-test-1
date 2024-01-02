@@ -6,6 +6,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@TestMethodOrder(MethodOrderer.MethodName.class)
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 class DemoUtilsTest {
 
@@ -33,6 +34,7 @@ class DemoUtilsTest {
     }
 
     @Test
+    @Order(-3)
     @DisplayName("equals or not equals")
     void testEqualsAndNotEquals() {
         DemoUtils demoUtils = new DemoUtils();
@@ -42,6 +44,7 @@ class DemoUtilsTest {
     }
 
     @Test
+    @Order(0)
     @DisplayName("null or not null")
     void testNullAndNotNull() {
         DemoUtils demoUtils = new DemoUtils();
