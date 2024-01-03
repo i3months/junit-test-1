@@ -7,7 +7,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder(MethodOrderer.MethodName.class)
-@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
+//@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 class DemoUtilsTest {
 
     DemoUtils demoUtils;
