@@ -6,6 +6,9 @@ import org.junit.jupiter.api.condition.*;
 
 class ConditionalTest {
 
+    @Mock
+    ApplicationContext context;
+
     @Test
     @Disabled("disable this test")
     void basicTest() {
